@@ -145,8 +145,8 @@
                         </div>
                         <div class="list">
                             <ul>
-                                <li class="active"><a href="profile-details.html">Profile Details</a></li>
-                                <li><a href="client-location.html">Location & Contacts</a></li>
+                                <li><a href="profile-details.html">Profile Details</a></li>
+                                <li class="active"><a href="client-location.html">Location & Contacts</a></li>
                                 <li><a href="client-rating.html">Rating History</a></li>
                             </ul>
                         </div>
@@ -160,35 +160,64 @@
                         <form>
                             <div class="form-content">
                                 <div class="input-item w-2-1">
-                                    <label for="f-name">First Name</label>
-                                    <input type="text" placeholder="Mahmoud" id="f-name">
+                                    <label for="country">Country</label>
+                                    <select id="country" class="nice-select w-100">
+                                        <option>Saudi Arabia</option>
+                                        <option>Saudi Arabia</option>
+                                        <option>Saudi Arabia</option>
+                                        <option>Saudi Arabia</option>
+                                    </select>
                                 </div>
                                 <div class="input-item w-2-1">
-                                    <label for="l-name">Last Name</label>
-                                    <input type="text" placeholder="Sami" id="l-name">
+                                    <label for="province">Region</label>
+                                    <select id="province" class="nice-select w-100">
+                                        <option>Eastern Province</option>
+                                        <option>Eastern Province</option>
+                                        <option>Eastern Province</option>
+                                        <option>Eastern Province</option>
+                                    </select>
                                 </div>
                                 <div class="input-item w-2-1">
-                                    <label for="email">Email Address</label>
-                                    <input type="email" placeholder="Mahmoud.Sami@Fleeti.com" id="email">
+                                    <label for="city">City</label>
+                                    <select id="city" class="nice-select w-100">
+                                        <option>Al Dammam</option>
+                                        <option>Al Dammam</option>
+                                        <option>Al Dammam</option>
+                                        <option>Al Dammam</option>
+                                    </select>
                                 </div>
+
                                 <div class="input-item w-2-1">
-                                    <label for="password">Password</label>
-                                    <input type="password" placeholder="************" id="password">
-                                    <span class="eye-btn">
-                                        <i class="las la-eye"></i>
-                                    </span>
+                                    <label for="address">Address</label>
+                                    <input type="text" placeholder="King Abdulalah Street, Al Tubayshi" id="address">
                                 </div>
-                                <div class="input-item">
-                                    <label for="about">About</label>
-                                    <textarea id="about">Lorem Ipsum Dolor Sit Amet, Consetetur Sadipscing Elitr, Sed Diam Nonumy Eirmod Tempor Invidunt Ut Labore Et Dolore Magna Aliquyam Erat, Sed Diam Voluptua. At Vero Eos Et Accusam Et Justo Duo Dolores Et Ea Rebum. Stet Clita Kasd Gubergren, No Sea</textarea>
+
+                                <div class="input-item w-2-1">
+                                    <label>Phone Number</label>
+                                    <div class="double-input">
+                                        <select class="nice-select">
+                                            <option>+966</option>
+                                            <option>+966</option>
+                                            <option>+966</option>
+                                            <option>+966</option>
+                                        </select>
+                                        <input type="text" placeholder="267 782 11">
+                                    </div>
                                 </div>
-                                <div class="input-item">
-                                    <label for="link">Referral Link</label>
-                                    <input id="copy-text" type="text" value="https://abdulrahman.fleeti.com/en/referral/GhU5DYdQm74F5ee4a" readonly id="link">
-                                    <span class="copy-btn">
-                                        <i class="las la-copy"></i>
-                                    </span>
+
+                                <div class="input-item w-2-1">
+                                    <label>Landlines No. <span>(Optional)</span></label>
+                                    <div class="double-input">
+                                        <select class="nice-select">
+                                            <option>+966</option>
+                                            <option>+966</option>
+                                            <option>+966</option>
+                                            <option>+966</option>
+                                        </select>
+                                        <input type="text" placeholder="267 782 11">
+                                    </div>
                                 </div>
+                                
                                 <div class="input-item">
                                     <button type="button">Save Changes</button>
                                 </div>

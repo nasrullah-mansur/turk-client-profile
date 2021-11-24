@@ -1,11 +1,7 @@
 $(document).ready(function () {
     "use strict";
 
-    $('.dashboard-content .slider').slick({
-        dots: true,
-        arrows: false,
-    });
-
+   
     $('.dashboard-header .mobile-btn .notification-toggler').on('click', function (e) {
         e.preventDefault();
         $(this).toggleClass('active');
@@ -27,79 +23,33 @@ $(document).ready(function () {
         $('.body-overlay').toggle();
     })
 
-    $('.dashboard-content a.hide-offer').on('click', function (e) {
-        e.preventDefault();
-        let text = $(this).text();
-        $('.dashboard-content .tab-content .content .list').slideToggle();
-        $('.dashboard-content a.dots').toggle();
-
-        if (text == 'Hide Offers') {
-            $(this).text('Show Offers');
-        }
-
-        if(text == 'Show Offers') {
-            $(this).text('Hide Offers');
-        }
-
-        if(text == 'اخفاء العروض') {
-            $(this).text('عرض العروض');
-        }
-
-        if(text == 'عرض العروض') {
-            $(this).text('اخفاء العروض');
-        }
-
-
+    $('.input-item .eye-btn').on('click', function() {
+        let inputItem = $(this).parents('.input-item').find('input');
+        inputItem.attr('type', function() {
+            if(inputItem.attr('type') === 'text') {
+                return 'password';
+            } else {
+                return 'text';
+            }
+        })
+        $(this).children('i').toggleClass('la-copy la-eye-slash')
     })
 
     $('.nice-select').niceSelect();
 
+    // Copy text;
+    function copyToClipboard(text) {
+        const elem = document.createElement('textarea');
+        elem.value = text;
+        document.body.appendChild(elem);
+        elem.select();
+        document.execCommand('copy');
+        document.body.removeChild(elem);
+     }
 
-    $('.ratting-modal .ratting input').on('click', function () {
-        let inputVal = $(this).val();
-
-        let allLabel = $('.ratting-modal .ratting label');
-        Array.from(allLabel).forEach((label) => {
-            let checkInput = label.querySelector('input');
-            let checkIcon = label.querySelector('i').classList;
-
-            if (checkInput.value <= inputVal) {
-                label.classList.add('active');
-                checkIcon.remove('far');
-                checkIcon.add('fas');
-            } else {
-                label.classList.remove('active');
-                checkIcon.remove('fas');
-                checkIcon.add('far');
-            }
-        })
-
+    $('.client-dashboard .right-side .form-content .input-item .copy-btn').on('click', function() {
+        let text = document.getElementById('copy-text').value;
+        copyToClipboard(text)
     })
-
-
-    $('.dashboard-content .tab-content .content .top .btn-area span.dots').on('click', function () {
-        $(this).children('a').fadeToggle();
-    });
-
-
-    $('.dashboard-content .tab-content .title .search form input').on('focus', function () {
-        $(this).parents('form').addClass('active');
-    })
-
-    $('.dashboard-content .tab-content .title .search form input').on('blur', function () {
-        $(this).parents('form').removeClass('active');
-    })
-
-
-    // checkout details;
-    if($('.details-collapse').length > 0) {
-        $('.invoice-details input').on('click', function() {
-            if($(this).val() == 1 ) {
-                $('.details-collapse').slideUp();
-            } else {
-                $('.details-collapse').slideDown();
-            }
-        })
-    }
 
 });

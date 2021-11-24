@@ -1135,6 +1135,13 @@ ul {
   background-color: #ffffff;
 }
 
+@media (max-width: 767.98px) {
+  .client-dashboard .left-side {
+    min-height: auto;
+    margin: 35px 15px 0;
+  }
+}
+
 .client-dashboard .left-side .profile-image {
   padding-top: 30px;
 }
@@ -1225,6 +1232,12 @@ ul {
   margin-top: auto;
 }
 
+@media (max-width: 767.98px) {
+  .client-dashboard .left-side .bottom {
+    margin-top: 0;
+  }
+}
+
 .client-dashboard .left-side .bottom p {
   margin: 0;
   padding: 20px;
@@ -1241,6 +1254,16 @@ ul {
   background-color: #ffffff;
 }
 
+@media (max-width: 767.98px) {
+  .client-dashboard .right-side {
+    min-height: auto;
+    margin: 35px 15px 35px;
+  }
+  .client-dashboard .right-side.client-rating {
+    padding: 30px 15px 15px;
+  }
+}
+
 .client-dashboard .right-side .form-content {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1255,7 +1278,7 @@ ul {
 .client-dashboard .right-side .form-content .input-item {
   position: relative;
   width: 100%;
-  padding-bottom: 35px;
+  padding-bottom: 30px;
 }
 
 .client-dashboard .right-side .form-content .input-item:last-child {
@@ -1278,7 +1301,7 @@ ul {
   right: 0;
   width: 76px;
   height: 44px;
-  margin-top: -0.5px;
+  margin-top: 2px;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
   background-color: #D14335;
@@ -1300,10 +1323,20 @@ ul {
   width: calc(50% - 7.5px);
 }
 
+@media (max-width: 991.98px) {
+  .client-dashboard .right-side .form-content .input-item.w-2-1 {
+    width: 100%;
+  }
+}
+
 .client-dashboard .right-side .form-content .input-item label {
   display: block;
   font-size: 16px;
   padding-bottom: 10px;
+}
+
+.client-dashboard .right-side .form-content .input-item label span {
+  color: #A3A3A3;
 }
 
 .client-dashboard .right-side .form-content .input-item input,
@@ -1327,8 +1360,14 @@ ul {
 }
 
 .client-dashboard .right-side .form-content .input-item textarea {
-  height: 118px;
+  min-height: 118px;
   padding: 10px;
+}
+
+@media (max-width: 991.98px) {
+  .client-dashboard .right-side .form-content .input-item textarea {
+    min-height: 210px;
+  }
 }
 
 .client-dashboard .right-side .form-content .input-item button {
@@ -1338,4 +1377,160 @@ ul {
   border: 0;
   font-size: 16px;
   color: #ffffff;
+}
+
+.client-dashboard .right-side .form-content .input-item .nice-select.w-100 {
+  width: 100%;
+  height: 44px;
+  border-radius: 0;
+  padding: 0 10px;
+  font-weight: 300;
+  border-color: #E5E5EA;
+}
+
+.client-dashboard .right-side .form-content .input-item .nice-select.w-100::before {
+  content: '';
+  width: 76px;
+  height: 42px;
+  background-color: #E5E5EA;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 1;
+}
+
+.client-dashboard .right-side .form-content .input-item .nice-select.w-100::after {
+  z-index: 9;
+  right: 33px;
+  border-color: transparent;
+  background-color: #8E8E93;
+  -webkit-transform-origin: center;
+          transform-origin: center;
+  width: 12px;
+  height: 12px;
+  -webkit-clip-path: polygon(50% 50%, 100% 50%, 50% 100%, 0% 50%);
+          clip-path: polygon(50% 50%, 100% 50%, 50% 100%, 0% 50%);
+  -webkit-transform: translateY(-50%) rotate(0);
+          transform: translateY(-50%) rotate(0);
+}
+
+.client-dashboard .right-side .form-content .input-item .nice-select.w-100.open {
+  border-color: #D14335;
+}
+
+.client-dashboard .right-side .form-content .input-item .nice-select.w-100.open::after {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.client-dashboard .right-side .form-content .input-item .nice-select.w-100 .list {
+  width: 100%;
+  border-radius: 0;
+  z-index: 999;
+}
+
+.client-dashboard .right-side .form-content .input-item .nice-select.w-100 .list li {
+  font-weight: 300;
+}
+
+.client-dashboard .right-side .form-content .input-item .double-input {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.client-dashboard .right-side .form-content .input-item .double-input .nice-select {
+  height: 44px;
+  border-radius: 0;
+  padding: 0 30px 0 10px;
+  font-weight: 300;
+  border-color: #E5E5EA;
+  background-color: #E5E5EA;
+  font-weight: 300;
+}
+
+.client-dashboard .right-side .form-content .input-item .double-input .nice-select .list {
+  border-radius: 0;
+  font-weight: 300;
+  z-index: 999;
+}
+
+.client-dashboard .right-side .rattings-area h2 {
+  font-size: 24px;
+  font-weight: 500;
+  padding-bottom: 25px;
+}
+
+.client-dashboard .right-side .rattings-area .item {
+  padding: 15px;
+  -webkit-box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+          box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 15px;
+}
+
+.client-dashboard .right-side .rattings-area .item .img {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  margin-right: 15px;
+}
+
+.client-dashboard .right-side .rattings-area .item .text {
+  width: calc(100% - 63px);
+}
+
+.client-dashboard .right-side .rattings-area .item .text > p {
+  font-size: 14px;
+  line-height: 24px;
+  padding-top: 30px;
+}
+
+.client-dashboard .right-side .rattings-area .item .text .header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.client-dashboard .right-side .rattings-area .item .text .header .title h4 {
+  margin-bottom: 0;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.client-dashboard .right-side .rattings-area .item .text .header .title p {
+  font-size: 12px;
+  color: #8E8E93;
+  font-weight: 300;
+  margin-bottom: 0;
+}
+
+.client-dashboard .right-side .rattings-area .item .text .header .ratting {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.client-dashboard .right-side .rattings-area .item .text .header .ratting i {
+  font-size: 14px;
+  margin-left: 5px;
+  color: #C7C7CC;
+}
+
+@media (max-width: 767.98px) {
+  .client-dashboard .right-side .rattings-area .item .text .header .ratting i {
+    margin-left: 3px;
+  }
+}
+
+.client-dashboard .right-side .rattings-area .item .text .header .ratting i.active {
+  color: #FFCC00;
 }
