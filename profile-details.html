@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fleeti :: Client Dashboard</title>
+
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/line-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/slick.css">
+    <link rel="stylesheet" href="assets/css/nice-select.css">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="assets/images/favicon.png" type="image/x-icon">
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body class="dashboard">
+
+    <div class="body-overlay"></div>
+
+    <!-- Header start -->
+    <header class="dashboard-header">
+        <div class="container-fluid">
+            <div class="content">
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="assets/images/logo-3.png" alt="logo">
+                    </a>
+                </div>
+                <div class="order-btn">
+                    <a href="#">
+                        <img src="assets/images/my-order.svg" alt="my-order">
+                        <span>My Orders</span>
+                    </a>
+                </div>
+                <div class="flag">
+                    <a href="#">
+                        <img src="assets/images/flug-arabic.svg" alt="flag">
+                        <span>العربية</span>
+                    </a>
+                </div>
+
+                <div class="right-btns">
+                    <div href="javascript:void(0);" class="notification active">
+                        <img src="assets/images/notification.svg" alt="notification">
+                        <div class="notification-area">
+                            <div class="triangle"></div>
+                            <h4>Notifications</h4>
+                            <ul>
+                                <li><a href="#">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
+                                        eirmod tempor</a></li>
+                                <li><a href="#">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
+                                        eirmod tempor</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div href="#" class="user">
+                        <img src="assets/images/user.svg" alt="user">
+                        <div class="user-dropdown">
+                            <div class="triangle"></div>
+                            <ul>
+                                <li><a href="#">View Profile</a></li>
+                                <li><a href="#">Log Out</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mobile-btn">
+                    <span class="mobile-toggler">
+                        <i class="fas fa-bars"></i>
+                    </span>
+
+                    <div class="mobile-nav">
+                        <span class="triangle"></span>
+                        <ul>
+                            <li>
+                                <a href="#">
+                                    <img src="assets/images/mobile-icon-1.svg" alt="icon">
+                                    <span>My Dashboard</span>
+                                    <i class="las la-angle-right"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="notification-toggler">
+                                    <img src="assets/images/mobile-icon-2.svg" alt="icon">
+                                    <span>Notifications</span>
+                                    <i class="las la-angle-right"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="profile-toggler">
+                                    <img src="assets/images/mobile-icon-3.svg" alt="icon">
+                                    <span>My Profile</span>
+                                    <i class="las la-angle-right"></i>
+                                </a>
+                            </li>
+                        </ul>
+
+                        <div class="profile">
+                            <ul>
+                                <li><a href="#">View Profile</a></li>
+                                <li><a href="#">Log Out</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="notification">
+                            <h3>Notifications</h3>
+                            <ul>
+                                <li><a href="#">Lorem Ipsum Dolor Sit Amet, Conse, tetur Eirmod Tempor</a></li>
+                                <li><a href="#">Lorem Ipsum Dolor Sit Amet, Conse, tetur Eirmod Tempor</a></li>
+                                <li><a href="#">Lorem Ipsum Dolor Sit Amet, Conse, tetur Eirmod Tempor</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- Header end -->
+
+    <main class="dashboard-content client-dashboard">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="left-side">
+                        <div class="profile-image">
+                            <div class="img">
+                                <img src="assets/images/profile.png" alt="img">
+                                <label for="profile">
+                                    <img src="assets/images/camera.png" alt="camera-img">
+                                </label>
+                                <input type="file" id="profile" class="d-none">
+                            </div>
+                            <div class="text">
+                                <h1>Mahmoud Sami</h1>
+                                <p>Jeddah, Saudi Arabia</p>
+                            </div>
+                        </div>
+                        <div class="list">
+                            <ul>
+                                <li class="active"><a href="#">Profile Details</a></li>
+                                <li><a href="#">Location & Contacts</a></li>
+                                <li><a href="#">Rating History</a></li>
+                            </ul>
+                        </div>
+                        <div class="bottom">
+                            <p>Member Since Jun 13Th, 2020</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-8">
+                    <div class="right-side">
+                        <form>
+                            <div class="form-content">
+                                <div class="input-item w-2-1">
+                                    <label for="f-name">First Name</label>
+                                    <input type="text" placeholder="Mahmoud" id="f-name">
+                                </div>
+                                <div class="input-item w-2-1">
+                                    <label for="l-name">Last Name</label>
+                                    <input type="text" placeholder="Sami" id="l-name">
+                                </div>
+                                <div class="input-item w-2-1">
+                                    <label for="email">Email Address</label>
+                                    <input type="email" placeholder="Mahmoud.Sami@Fleeti.com" id="email">
+                                </div>
+                                <div class="input-item w-2-1">
+                                    <label for="password">Password</label>
+                                    <input type="password" placeholder="************" id="password">
+                                    <span class="eye-btn">
+                                        <i class="las la-eye"></i>
+                                    </span>
+                                </div>
+                                <div class="input-item">
+                                    <label for="about">About</label>
+                                    <textarea id="about">Lorem Ipsum Dolor Sit Amet, Consetetur Sadipscing Elitr, Sed Diam Nonumy Eirmod Tempor Invidunt Ut Labore Et Dolore Magna Aliquyam Erat, Sed Diam Voluptua. At Vero Eos Et Accusam Et Justo Duo Dolores Et Ea Rebum. Stet Clita Kasd Gubergren, No Sea</textarea>
+                                </div>
+                                <div class="input-item">
+                                    <label for="link">Referral Link</label>
+                                    <input type="text" value="https://abdulrahman.fleeti.com/en/referral/GhU5DYdQm74F5ee4a" readonly id="link">
+                                    <span class="copy-btn">
+                                        <i class="las la-copy"></i>
+                                    </span>
+                                </div>
+                                <div class="input-item">
+                                    <button type="button">Save Changes</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- <div style="height: 50px;"></div> -->
+
+    <!-- Footer start -->
+    <footer class="footer-2 px-sm-30 d-block d-lg-none">
+        <div class="container">
+            <div class="footer-2-content">
+                <div class="email">
+                    <a href="#">info@fleeti.com</a>
+                </div>
+                <div class="menu d-none d-md-block">
+                    <ul>
+                        <li><a href="#">Who are we</a></li>
+                        <li><a href="#">Tips Guide</a></li>
+                        <li><a href="#">Terms and Conditions</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Contact us</a></li>
+                    </ul>
+                </div>
+                <div class="social">
+                    <ul>
+                        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                        <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                        <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer end -->
+
+
+    <script src="assets/js/jquery.2.2.4.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/slick.min.js"></script>
+    <script src="assets/js/jquery.nice-select.min.js"></script>
+    <script src="assets/js/custom.js"></script>
+
+</body>
+
+</html>

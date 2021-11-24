@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="79" height="79" viewBox="0 0 79 79">
+  <g id="Group_25539" data-name="Group 25539" transform="translate(-11 -11)">
+    <circle id="Ellipse_387" data-name="Ellipse 387" cx="37.5" cy="37.5" r="37.5" transform="translate(13 13)" fill="#fdac42" opacity="0.2"/>
+    <circle id="Ellipse_388" data-name="Ellipse 388" cx="37.5" cy="37.5" r="37.5" transform="translate(13 13)" fill="none" stroke="#fdac42" stroke-miterlimit="10" stroke-width="4"/>
+    <ellipse id="Ellipse_389" data-name="Ellipse 389" cx="5" cy="4.5" rx="5" ry="4.5" transform="translate(31 38)" fill="#fdac42"/>
+    <ellipse id="Ellipse_390" data-name="Ellipse 390" cx="5" cy="4.5" rx="5" ry="4.5" transform="translate(59 38)" fill="#fdac42"/>
+    <ellipse id="Ellipse_391" data-name="Ellipse 391" cx="5" cy="4.5" rx="5" ry="4.5" transform="translate(31 38)" fill="#fdac42"/>
+    <ellipse id="Ellipse_392" data-name="Ellipse 392" cx="5" cy="4.5" rx="5" ry="4.5" transform="translate(59 38)" fill="#fdac42"/>
+    <path id="Path_9604" data-name="Path 9604" d="M118.9,161.373a18.756,18.756,0,0,0-32.484,0" transform="translate(-52.662 -92.624)" fill="none" stroke="#fdac42" stroke-linecap="round" stroke-linejoin="round" stroke-width="4"/>
+  </g>
+</svg>

@@ -1,0 +1,32 @@
+@mixin bg-overlay($opacity, $bgcolor) {
+    position: absolute;
+    content: "";
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	opacity: $opacity;
+    background: $bgcolor;
+    z-index: -1;
+}
+
+@mixin flex-position() {
+	display: flex;
+	justify-content: center;
+    align-items: center;
+}
+
+@mixin bg-cover() {
+	background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+@mixin position-center($z) {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-#{$top}, -#{$top});
+    z-index: $z;
+}
+

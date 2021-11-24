@@ -1,0 +1,17 @@
+ 
+// Variable
+@import "variable/_variable.scss";
+
+// Mixin
+@import "mixin/_mixin.scss";
+
+// Body reset content
+@import "reset/_predefine.scss";
+
+// Sections;
+@import "section/header/header";
+@import "section/footer/footer";
+
+
+// Pages;
+@import 'pages/clientDashboard/clientDashboard';

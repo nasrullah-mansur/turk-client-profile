@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24" height="24" viewBox="0 0 24 24">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_5264" data-name="Rectangle 5264" width="24" height="24" fill="#fdac42"/>
+    </clipPath>
+  </defs>
+  <g id="Mask_Group_95" data-name="Mask Group 95" clip-path="url(#clip-path)">
+    <g id="info-duotone">
+      <rect id="Rectangle_5265" data-name="Rectangle 5265" width="24" height="24" fill="none"/>
+      <circle id="Ellipse_393" data-name="Ellipse 393" cx="9.058" cy="9.058" r="9.058" transform="translate(3.019 3.019)" fill="#fdac42" opacity="0.2"/>
+      <circle id="Ellipse_394" data-name="Ellipse 394" cx="9.058" cy="9.058" r="9.058" transform="translate(3.019 3.019)" fill="none" stroke="#fdac42" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+      <path id="Path_9606" data-name="Path 9606" d="M9.375,9.375h.755v5.284h.755" transform="translate(1.947 1.947)" fill="none" stroke="#fdac42" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+      <circle id="Ellipse_395" data-name="Ellipse 395" cx="1.132" cy="1.132" r="1.132" transform="translate(10.945 6.793)" fill="#fdac42"/>
+    </g>
+  </g>
+</svg>

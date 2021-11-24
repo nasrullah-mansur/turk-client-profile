@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600;700&display=swap');
+
+@font-face {
+font-family: 'arabic-light';
+src: url("../fonts/arabic/GESSTwoLight-Light.eot"); /* IE9 Compat Modes */
+src: url("../fonts/arabic/GESSTwoLight-Light.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+        url("../fonts/arabic/GESSTwoLight-Light.woff") format("woff"), /* Modern Browsers */
+        url("../fonts/arabic/GESSTwoLight-Light.ttf")  format("truetype"), /* Safari, Android, iOS */
+        url("../fonts/arabic/GESSTwoLight-Light.svg#svgFontName") format("svg"); /* Legacy iOS */
+}
+
+@font-face {
+font-family: 'arabic-medium';
+src: url("../fonts/arabic/GESSTwoMedium-Medium.eot"); /* IE9 Compat Modes */
+src: url("../fonts/arabic/GESSTwoMedium-Medium.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+        url("../fonts/arabic/GESSTwoMedium-Medium.woff") format("woff"), /* Modern Browsers */
+        url("../fonts/arabic/GESSTwoMedium-Medium.ttf")  format("truetype"), /* Safari, Android, iOS */
+        url("../fonts/arabic/GESSTwoMedium-Medium.svg#svgFontName") format("svg"); /* Legacy iOS */
+}
+
+
+// Color;
+$primary-color: #D14335;
+$hover-color : #D14335;
+$bColor: #231F20;
+$white : #ffffff;
+$black : #000000;
+$bgFour: rgba(72, 7, 0, 0.77);
+$yellow: #FDDD48;
+
+$bgOne: #F7F7F7;
+$bgTwo: rgba(209, 66, 53, 0.04);
+
+// Body;
+$bodyFont: 'Sora', sans-serif;
+$titleFont: 'Sora', sans-serif;
+
+$bodyFontAr: 'arabic-light', 'Sora', sans-serif;
+$titleFontAr: 'arabic-medium', 'Sora', sans-serif;
+
+
+$bfSize: 14px;
+$bLineHeight: 24px;
+$fontWeight: 400;
+$transition: all .4s;
